@@ -1,0 +1,52 @@
+.about_img{
+    border-radius: 50%;
+    width: 350px;
+    height: 450px;
+    align-self: center;
+    margin-left: 80px;
+}
+.aboutMe{
+    margin: 30px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y: auto; /* 수직 스크롤 활성화 */
+    -ms-overflow-style: none; /* IE 및 Edge에서 스크롤바 숨기기 */
+    scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
+}
+.aboutMe::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera에서 스크롤바 숨기기 */
+  }
+.title{
+    font-size: 30px;
+    width: 100%;
+}
+.contents{
+    width: 100%;
+    margin-top: 10px;
+    ul{
+        margin-left: 15px;
+    }
+    
+}
+.list{
+    margin-bottom: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.stack_img{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    gap: 5px;
+}
+.contents-grid{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    gap: none;
+    img{
+        width: 50px;
+    }
+}

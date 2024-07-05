@@ -1,0 +1,31 @@
+.home_img {
+    height: 700px;
+  }
+  .container {
+    display: flex;
+    max-height: 700px;
+  }
+  .info {
+    margin: auto 100px;
+    font-family: "Impact", "Charcoal", sans-serif;
+  }
+  .name {
+    font-size: 60px;
+  }
+  .line {
+    display: inline-block;
+    width: 400px;
+    height: 7px;
+    background-color: #333;
+    margin: 10px 0;
+  }
+  .rotating {
+    margin-top: 150px;
+    position: relative;
+    font-size: 30px;
+  }
+  .developer{
+    margin-top: 15px;
+    font-size: 45px;
+  }
+  

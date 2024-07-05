@@ -1,0 +1,31 @@
+.project {
+  margin: 20px auto;
+}
+.prj_title {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.project_img_box {
+    max-height: 590px;
+  display: grid;
+  grid-template-columns: 485px 485px 485px;
+  justify-items: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  scrollbar-width: none; /* Firefox에 대한 스크롤바 숨김 */
+  -ms-overflow-style: none; /* IE/Edge에 대한 스크롤바 숨김 */
+}
+.project_img_box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera에 대한 스크롤바 숨김 */
+  }
+  .project_img_list{
+    margin-top: 10px;
+  }
+.project_img {
+  width: 400px;
+  height: 230px;
+  cursor: pointer;
+}

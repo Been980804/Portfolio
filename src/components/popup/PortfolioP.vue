@@ -12,9 +12,7 @@
           <ul class="popup_info_list">
             <li><strong>Description</strong></li>
             <div class="popup_info_contents">
-              Vue.js, SpringBoot를 활용한 도서관 대여/예약 웹서비스 입니다.
-              멜론의 플레이리스트에서 영감을 받아 회원이 북플레이리스트를 만들
-              수 있는 기능을 추가하였습니다.
+              저의 포트폴리오입니다. Vue.js를 통해 구성하였습니다.
             </div>
           </ul>
           <ul class="popup_info_list">
@@ -29,8 +27,8 @@
           <ul class="popup_info_list">
             <li><strong>GitHub</strong></li>
             <div class="popup_info_contents">
-              <a href="https://github.com/Been980804/Gukbi-front-end"
-                >https://github.com/Been980804/Gukbi-front-end</a
+              <a href="https://github.com/Been980804/Portfolio"
+                >https://github.com/Been980804/Portfolio</a
               >   
             </div>
           </ul>

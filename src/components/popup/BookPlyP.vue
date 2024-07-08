@@ -23,6 +23,7 @@
             <div class="popup_info_contents">
               <ul class="popup_skill_list">
                 <li>Java</li>
+                <li>JavaScript</li>
                 <li>Vue.js</li>
                 <li>SpringBoot</li>
               </ul>

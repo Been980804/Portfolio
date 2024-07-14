@@ -18,6 +18,8 @@
               입니다. Python의 BeautifulSoup, Selenium을 이용하여 영화 정보를
               크롤링해왔습니다.
             </div>
+            <br>
+            <div class="goDetail">Detail</div>
           </ul>
           <ul class="popup_info_list">
             <li><strong>Skill</strong></li>
@@ -26,6 +28,7 @@
                 <li>Java</li>
                 <li>Python</li>
                 <li>React</li>
+                <li>react-router</li>
                 <li>SpringBoot</li>
                 <li>JSoup</li>
                 <li>BeautifulSoup</li>

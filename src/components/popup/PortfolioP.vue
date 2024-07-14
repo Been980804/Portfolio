@@ -14,6 +14,8 @@
             <div class="popup_info_contents">
               저의 포트폴리오입니다. Vue.js를 통해 구성하였습니다.
             </div>
+            <br>
+            <div class="goDetail">Detail</div>
           </ul>
           <ul class="popup_info_list">
             <li><strong>Skill</strong></li>
@@ -21,6 +23,7 @@
               <ul class="popup_skill_list">
                 <li>JavaScript</li>
                 <li>Vue.js</li>
+                <li>vue-router</li>
               </ul>
             </div>
           </ul>

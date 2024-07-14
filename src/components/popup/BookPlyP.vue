@@ -17,6 +17,8 @@
               멜론의 플레이리스트에서 영감을 받아 회원이 북플레이리스트를 만들
               수 있는 기능을 추가하였습니다.
             </div>
+            <br>
+            <div class="goDetail">Detail</div>
           </ul>
           <ul class="popup_info_list">
             <li><strong>Skill</strong></li>
@@ -25,6 +27,7 @@
                 <li>Java</li>
                 <li>JavaScript</li>
                 <li>Vue.js</li>
+                <li>vue-router</li>
                 <li>SpringBoot</li>
               </ul>
             </div>

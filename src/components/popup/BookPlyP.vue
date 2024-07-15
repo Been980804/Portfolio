@@ -18,7 +18,7 @@
               수 있는 기능을 추가하였습니다.
             </div>
             <br>
-            <div class="goDetail">Detail</div>
+            <div class="goDetail" @click="openDetail">Detail</div>
           </ul>
           <ul class="popup_info_list">
             <li><strong>Skill</strong></li>
@@ -49,11 +49,22 @@
         </div>
       </div>
     </div>
+    <BookplyDetailP v-if="showDetail" @close="closeDetail"/>
   </div>
 </template>
 
 <script>
+import BookplyDetailP from "../../components/popup/BookPlyDetailP.vue";
+
 export default {
+  components: {
+    BookplyDetailP
+  },
+  data(){
+    return{
+      showDetail : false,
+    }
+  },
   methods: {
     close_bookply() {
       this.$emit("close");
@@ -63,6 +74,12 @@ export default {
         this.close_bookply();
       }
     },
+    openDetail(){
+      this.showDetail = true;
+    },
+    closeDetail(){
+      this.showDetail = false;
+    }
   },
 };
 </script>

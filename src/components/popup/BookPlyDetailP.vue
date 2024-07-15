@@ -5,7 +5,7 @@
         <img src="../../assets/img/close-window2.png" class="close_img" />
       </div>
         <div class="detail_body">
-            hi
+            bookply
         </div>
     </div>
   </div>

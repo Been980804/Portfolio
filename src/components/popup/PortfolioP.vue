@@ -15,7 +15,7 @@
               저의 포트폴리오입니다. Vue.js를 통해 구성하였습니다.
             </div>
             <br>
-            <div class="goDetail">Detail</div>
+            <div class="goDetail" @click="openDetail">Go Detail</div>
           </ul>
           <ul class="popup_info_list">
             <li><strong>Skill</strong></li>
@@ -38,11 +38,22 @@
         </div>
       </div>
     </div>
+    <PortfolioDetailP v-if="showDetail" @close="closeDetail"/>
   </div>
 </template>
 
 <script>
+import PortfolioDetailP from './PortfolioDetailP.vue';
+
 export default {
+  components: {
+    PortfolioDetailP,
+  },
+  data(){
+    return{
+      showDetail : false,
+    }
+  },
   methods: {
     close_portfolio() {
       this.$emit("close");
@@ -52,6 +63,12 @@ export default {
         this.close_portfolio();
       }
     },
+    openDetail(){
+      this.showDetail = true;
+    },
+    closeDetail(){
+      this.showDetail = false;
+    }
   },
 };
 </script>

@@ -19,7 +19,7 @@
               크롤링해왔습니다.
             </div>
             <br>
-            <div class="goDetail">Detail</div>
+            <div class="goDetail" @click="openDetail">Go Detail</div>
           </ul>
           <ul class="popup_info_list">
             <li><strong>Skill</strong></li>
@@ -53,11 +53,22 @@
         </div>
       </div>
     </div>
+    <FilmScheduleDetailP v-if="showDetail" @close="closeDetail"/>
   </div>
 </template>
 
 <script>
+import FilmScheduleDetailP from "../../components/popup/FilmScheduleDetailP.vue";
+
 export default {
+  components: {
+    FilmScheduleDetailP,
+  },
+  data(){
+    return{
+      showDetail : false,
+    }
+  },
   methods: {
     close_filmschedule() {
       this.$emit("close");
@@ -67,6 +78,12 @@ export default {
         this.close_filmschedule();
       }
     },
+    openDetail(){
+      this.showDetail = true;
+    },
+    closeDetail(){
+      this.showDetail = false;
+    }
   },
 };
 </script>

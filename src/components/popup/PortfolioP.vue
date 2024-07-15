@@ -15,7 +15,7 @@
               저의 포트폴리오입니다. Vue.js를 통해 구성하였습니다.
             </div>
             <br>
-            <div class="goDetail" @click="openDetail">Go Detail</div>
+            <div class="goDetail" @click="openDetail">Go Detail...</div>
           </ul>
           <ul class="popup_info_list">
             <li><strong>Skill</strong></li>

@@ -18,7 +18,7 @@
               수 있는 기능을 추가하였습니다.
             </div>
             <br>
-            <div class="goDetail" @click="openDetail">Go Detail</div>
+            <div class="goDetail" @click="openDetail">Go Detail...</div>
           </ul>
           <ul class="popup_info_list">
             <li><strong>Skill</strong></li>

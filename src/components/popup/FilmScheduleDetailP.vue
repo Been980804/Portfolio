@@ -1,5 +1,5 @@
 <template>
-  <div class="detail_container">
+  <div class="detail_container" @click="closeIfOutsidePopup">
     <div class="detail_main">
         <div class="close_detail" @click="close_detail">
         <img src="../../assets/img/close-window2.png" class="close_img" />
@@ -16,6 +16,11 @@ export default {
     methods:{
         close_detail() {
             this.$emit("close");
+        },
+        closeIfOutsidePopup(event) {
+            if (event.target === event.currentTarget) {
+            this.close_detail();
+          }
         },
     }
 }

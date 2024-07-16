@@ -12,7 +12,12 @@
           <ul class="popup_info_list">
             <li><strong>Description</strong></li>
             <div class="popup_info_contents">
-              저의 포트폴리오입니다. Vue.js를 통해 구성하였습니다.
+              <ul>
+                <li>저의 포트폴리오입니다. Vue.js를 통해 구성하였습니다.</li>
+                <li>인원 : 1인 프로젝트</li>
+                <li>개발 파트 : 프론트엔드(Vue.js)</li>
+                <li>개발 기간 : 1주</li>
+              </ul>
             </div>
             <br>
             <div class="goDetail" @click="openDetail">Go Detail...</div>

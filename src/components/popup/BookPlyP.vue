@@ -13,11 +13,18 @@
           <ul class="popup_info_list">
             <li><strong>Description</strong></li>
             <div class="popup_info_contents">
-              Vue.js, SpringBoot를 활용한 도서관 대여/예약 웹서비스 입니다.
-              멜론의 플레이리스트에서 영감을 받아 회원이 북플레이리스트를 만들
-              수 있는 기능을 추가하였습니다.
+              <ul>
+                <li>
+                  Vue.js, SpringBoot를 활용한 도서관 대여/예약 웹서비스 입니다.
+                  멜론의 플레이리스트에서 영감을 받아 회원이 북플레이리스트를
+                  만들 수 있는 기능을 추가하였습니다.
+                </li>
+                <li>인원 : 4인 프로젝트</li>
+                <li>개발 파트 : 회원 정보 관리 및 게시판(공지사항, 문의사항, 북플리)</li>
+                <li>개발 기간 : 5주</li>
+              </ul>
             </div>
-            <br>
+            <br />
             <div class="goDetail" @click="openDetail">Go Detail...</div>
           </ul>
           <ul class="popup_info_list">
@@ -49,7 +56,7 @@
         </div>
       </div>
     </div>
-    <BookplyDetailP v-if="showDetail" @close="closeDetail"/>
+    <BookplyDetailP v-if="showDetail" @close="closeDetail" />
   </div>
 </template>
 
@@ -58,12 +65,12 @@ import BookplyDetailP from "../../components/popup/BookPlyDetailP.vue";
 
 export default {
   components: {
-    BookplyDetailP
+    BookplyDetailP,
   },
-  data(){
-    return{
-      showDetail : false,
-    }
+  data() {
+    return {
+      showDetail: false,
+    };
   },
   methods: {
     close_bookply() {
@@ -74,12 +81,12 @@ export default {
         this.close_bookply();
       }
     },
-    openDetail(){
+    openDetail() {
       this.showDetail = true;
     },
-    closeDetail(){
+    closeDetail() {
       this.showDetail = false;
-    }
+    },
   },
 };
 </script>

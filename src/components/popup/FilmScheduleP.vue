@@ -14,11 +14,18 @@
           <ul class="popup_info_list">
             <li><strong>Description</strong></li>
             <div class="popup_info_contents">
-              React, SpringBoot를 활용한 박스오피스 상영시간표 비교 웹서비스
-              입니다. Python의 BeautifulSoup, Selenium을 이용하여 영화 정보를
-              크롤링해왔습니다.
+              <ul>
+                <li>
+                  React, SpringBoot를 활용한 박스오피스 상영시간표 비교 웹서비스
+                  입니다. Python의 BeautifulSoup, Selenium을 이용하여 영화
+                  정보를 크롤링해왔습니다.
+                </li>
+                <li>인원 : 2인 프로젝트</li>
+                <li>개발 파트 : 백엔드개발 및 프론트엔드(CSS)</li>
+                <li>개발 기간 : 3주</li>
+              </ul>
             </div>
-            <br>
+            <br />
             <div class="goDetail" @click="openDetail">Go Detail...</div>
           </ul>
           <ul class="popup_info_list">
@@ -53,7 +60,7 @@
         </div>
       </div>
     </div>
-    <FilmScheduleDetailP v-if="showDetail" @close="closeDetail"/>
+    <FilmScheduleDetailP v-if="showDetail" @close="closeDetail" />
   </div>
 </template>
 
@@ -64,26 +71,26 @@ export default {
   components: {
     FilmScheduleDetailP,
   },
-  data(){
-    return{
-      showDetail : false,
-    }
+  data() {
+    return {
+      showDetail: false,
+    };
   },
   methods: {
     close_filmschedule() {
       this.$emit("close");
     },
-     closeIfOutsidePopup(event) {
+    closeIfOutsidePopup(event) {
       if (event.target === event.currentTarget) {
         this.close_filmschedule();
       }
     },
-    openDetail(){
+    openDetail() {
       this.showDetail = true;
     },
-    closeDetail(){
+    closeDetail() {
       this.showDetail = false;
-    }
+    },
   },
 };
 </script>

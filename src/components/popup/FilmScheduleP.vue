@@ -2,11 +2,11 @@
   <div class="popup_container" @click="closeIfOutsidePopup">
     <div class="popup_main" @click.stop>
       <div class="close_popup" @click="close_filmschedule">
-        <img src="../../assets/img/close-window2.png" class="close_img" />
+        <img src="../../assets/img/close-window.png" class="close_img" />
       </div>
       <div class="popup_body">
         <img
-          src="../../assets/img/project/filmSchedule.png"
+          src="../../assets/img/project/film/filmSchedule.png"
           class="popup_img"
         />
         <div class="popup_info">

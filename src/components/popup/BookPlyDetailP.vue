@@ -2,7 +2,7 @@
   <div class="detail_container" @click="closeIfOutsidePopup">
     <div class="detail_main">
         <div class="close_detail" @click="close_detail">
-        <img src="../../assets/img/close-window2.png" class="close_img" />
+        <img src="../../assets/img/close-window.png" class="close_img" />
       </div>
         <div class="detail_body">
             bookply

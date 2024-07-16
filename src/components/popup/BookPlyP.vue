@@ -2,7 +2,7 @@
   <div class="popup_container" @click="closeIfOutsidePopup">
     <div class="popup_main" @click.stop>
       <div class="close_popup" @click="close_bookply">
-        <img src="../../assets/img/close-window2.png" class="close_img" />
+        <img src="../../assets/img/close-window.png" class="close_img" />
       </div>
       <div class="popup_body">
         <img src="../../assets/img/project/bookPly.png" class="popup_img" />

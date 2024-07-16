@@ -9,7 +9,7 @@
         <div class="project_img_list">
           <strong>영화 상영시간표 비교</strong>
           <img
-            src="../assets/img/project/filmSchedule.png"
+            src="../assets/img/project/film/filmSchedule.png"
             class="project_img"
             @click="open_filmSchedule"
           />

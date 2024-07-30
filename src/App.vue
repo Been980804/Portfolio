@@ -24,9 +24,9 @@ export default {
   color: #333;
 }
 .router-link-active {
-  text-decoration: none; /* 밑줄 제거 */
-  color: black; /* 클릭시 색상 변경 */
-  font-weight: bold; /* 클릭시 글씨 두껍게 */
+  text-decoration: none; 
+  color: black; 
+  font-weight: bold; 
 }
 .router {
   min-height: 700px;
